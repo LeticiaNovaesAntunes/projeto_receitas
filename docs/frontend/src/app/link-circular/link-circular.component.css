@@ -1,0 +1,102 @@
+
+#imgLinks {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+    padding-bottom: 90px
+  }
+  
+  .linkContainer {
+    position: relative; 
+    margin: 0 30px; 
+    text-align: center; 
+    font-family: "Caveat Brush", cursive;
+    font-size: 30px;
+  }
+  
+  .linkImage {
+    opacity: 0.8;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto; 
+    cursor: pointer;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: white;
+  }
+  
+  .linkImage:hover{
+    filter: grayscale(50%);
+  }
+  
+  #cabecalho {
+    background-color: white; 
+    width: 100%; 
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+  }
+  
+  /* Estilos para o formulário de busca */
+  form {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    flex-grow: 1; /* Faz o formulário crescer conforme necessário */
+    max-width: 500px; /* Define um tamanho máximo para o formulário */
+  }
+  
+  .search-box {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%; /* Faz o input ocupar 100% do espaço disponível */
+  }
+  
+  .search-box input.busca {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    background-color: white;
+    font-family: Sansita One;
+  }
+  
+  .busca:focus {
+    outline: none; /* Remove o contorno ao focar */
+  }
+  
+  .search-button {
+    border: none;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .search-button i {
+    color: #c38f65;
+  }
+  
+  #logo {
+    position:static;
+    margin: 0 auto; /* Centraliza a logo horizontalmente */
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  
+  #logo img {
+    z-index: 0; /* O logo fica abaixo das imagens */
+  }
+  

@@ -1,0 +1,40 @@
+-- database: ./receitas_la_web.sqlite
+
+CREATE TABLE IF NOT EXISTS Receita(
+    id_receita INTEGER AUTO INCREMENT PRIMARY KEY,
+    capa BLOB NOT NULL, 
+    nome TEXT NOT NULL,
+    ingredientes TEXT NOT NULL, 
+    etapas TEXT NOT NULL, 
+    tempoPreparo REAL NOT NULL,
+    tematica TEXT,
+    tema TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Usuarios(
+    id_usuario INTEGER AUTO INCREMENT PRIMARY KEY,
+    username TEXT NOT NULL,
+    email TEXT NOT NULL, 
+    senha TEXT NOT NULL
+); 
+
+CREATE TABLE IF NOT EXISTS Comentarios(
+    id_comentario INTEGER AUTO INCREMENT PRIMARY KEY,
+    id_usuario INTEGER NOT NULL, 
+    id_receita INTEGER NOT NULL,
+    dataComentario DATE NOT NULL, 
+    Comentario  TEXT NOT NULL, 
+
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (id_receita) REFERENCES Receita(id_receita)
+); 
+
+CREATE TABLE IF NOT EXISTS Favoritos(
+    id_favoritado INTEGER AUTO INCREMENT PRIMARY KEY,
+    id_usuario INTEGER NOT NULL, 
+    id_receita INTEGER NOT NULL, 
+
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (id_receita) REFERENCES Receita(id_receita)
+);
+

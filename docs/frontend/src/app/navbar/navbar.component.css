@@ -1,0 +1,92 @@
+
+#navbar{
+    position: fixed;
+    right: 30px;
+    padding: 10px;
+  }
+
+  #cabecalho {
+    background-color: white; 
+    width: 100%; 
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+  }
+  
+  .navButton{
+    text-decoration: none;
+    border: none;
+    border-radius: 16px;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 0;
+    cursor: pointer;
+    background-color: #c38f65;
+    font-family: Sansita One;
+  }
+  
+  .navLink{
+    text-decoration: none;
+    border: none;
+    border-radius: 16px;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 0;
+    cursor: pointer;
+    font-family: Sansita One;
+  }
+  
+  .navLink:hover{
+     background-color: #c38f65;
+     color: white;
+  }
+  
+  .navButton:hover{
+      color: white;
+  }
+  
+  form {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    flex-grow: 1; /* Faz o formulário crescer conforme necessário */
+    max-width: 500px; /* Define um tamanho máximo para o formulário */
+  }
+  
+  .search-box {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%; /* Faz o input ocupar 100% do espaço disponível */
+  }
+  
+  .search-box input.busca {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    background-color: white;
+    font-family: Sansita One;
+  }
+  
+  .busca:focus {
+    outline: none; /* Remove o contorno ao focar */
+  }
+  
+  .search-button {
+    border: none;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .search-button i {
+    color: #c38f65;
+  }
+  
