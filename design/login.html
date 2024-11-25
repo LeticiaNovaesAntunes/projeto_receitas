@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar receitas à la web</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/painel.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="painel"> 
+        <div class="painel-formulario">
+            <h1>Bem vindo(a) a Receitas à la Web!</h1>
+        
+            <form action="index.html" method="get">
+                <input class="input" name="email" type="email" placeholder="example@gmail.com" required>
+                <input class="input" name="password" type="password" placeholder="******" required>
+                <div class="opcao-usuario">
+                    <label for="Lembrar-Senha">
+                        <input type="checkbox" id="Lembrar-Senha" name="lembrarSenha">
+                        Lembrar senha
+                    </label>
+                    <a class="link-principal" href="#">Esqueceu sua senha?</a>
+                </div>
+                <button class="btn-principal" type="submit">Acessar</button>
+            </form>
+            <hr>
+            <span>Ainda não possui uma conta? <a class="link-principal link-bold" href="cadastro.html">Cadastre-se</a></span>
+        </div>
+        <img src="img/imagem-login.jpeg" alt="imagem de um doce">
+
+    </div>
+</body>
+</html>
